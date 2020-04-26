@@ -1,6 +1,6 @@
-# Chapter 1
+# My first chapter
 
-## A sub-title
+## A subtitle
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac odio sed felis dignissim vehicula. Nulla facilisi. Praesent sed nibh eget velit semper imperdiet. In laoreet quis purus in bibendum. Morbi tortor dolor, condimentum rutrum imperdiet sit amet, facilisis imperdiet nulla. Cras mattis interdum leo, vel hendrerit ante feugiat id. In placerat nisl quis tristique consectetur. Sed rhoncus neque et mi hendrerit, eu hendrerit urna gravida.
 

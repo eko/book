@@ -9,16 +9,20 @@ EXPORTED_DOCS=\
  $(SOURCE_DOCS:.md=.odt) \
  $(SOURCE_DOCS:.md=.epub)
 
-PANDOC_OPTIONS=--table-of-contents     \
-    --number-sections                  \
-    --pdf-engine=xelatex               \
-    --indented-code-classes=javascript \
-    --highlight-style=monochrome       \
-    -V mainfont="Palatino"             \
-    -V documentclass=report            \
-    -V papersize=A5                    \
-    -V geometry:margin=0.5in           \
-	--metadata-file=metadata.md
+PANDOC_OPTIONS=-f markdown       \
+    --table-of-contents          \
+    --number-sections            \
+    --pdf-engine=xelatex         \
+    --indented-code-classes='bash,numberLines html,numberLines javascript,numberLines go,numberLines' \
+    --highlight-style=monochrome \
+    -V mainfont="Palatino"       \
+    -V fontsize="10pt"           \
+    -V documentclass=report      \
+    -V papersize=A5              \
+    -V linestretch='0.85'        \
+    -V geometry:margin=0.5in     \
+    -V links-as-notes=true       \
+    --metadata-file=metadata.md
 
 PANDOC_HTML_OPTIONS=--to html5
 PANDOC_PDF_OPTIONS=
